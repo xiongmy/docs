@@ -1,11 +1,11 @@
 =======================================
-快速上手 RoboMaster SDK 的使用
+快速上手 uCode SDK 的使用
 =======================================
 
 介绍
 -----
 
-RoboMaster EP 作为一款教育机器人，具有强大的扩展性和可编程性，在编程方面提供了 Scratch 编程，Python 编程以及 SDK，方便用户对 RoboMaster EP 进行二次开发，扩展更加丰富的功能。
+uCode EP 作为一款教育机器人，具有强大的扩展性和可编程性，在编程方面提供了 Scratch 编程，Python 编程以及 SDK，方便用户对 uCode EP 进行二次开发，扩展更加丰富的功能。
 
 下面将使用 **Wi-Fi 直接连接** 方式（其他连接模式请参考 :doc:`连接 <./sdk/connection>`），以完成 **控制发射器发射** 功能为例，介绍SDK中明文协议的使用。
 
@@ -141,4 +141,4 @@ RoboMaster EP 作为一款教育机器人，具有强大的扩展性和可编程
 
 如果您手边的设备不支持 Wi-Fi 无法使用 **Wi-Fi 直接连接**，可以参考 :doc:`连接 <./sdk/connection>` 使用其他连接模式。
 
-以上就是 SDK 快速入门内容，更多使用细节请参见 :doc:`SDK文档 <./sdk/connection>`，更多示例代码请参见 `RoboMaster Sample Code <https://github.com/dji-sdk/RoboMaster-SDK>`_
+以上就是 SDK 快速入门内容，更多使用细节请参见 :doc:`SDK文档 <./sdk/connection>`，更多示例代码请参见 `uCode Sample Code <https://github.com/dji-sdk/RoboMaster-SDK>`_

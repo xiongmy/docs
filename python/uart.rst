@@ -25,9 +25,9 @@ UART
 
     :return: 无
 
-    :示例: ``serial_ctrl.write_line('RoboMaster EP')``
+    :示例: ``serial_ctrl.write_line('uCode EP')``
 
-    :示例说明: 向串口写入 ``'RoboMaster EP\n'`` ，最后的换行自动添加，用户只需要发送 ``'RoboMaster EP'``
+    :示例说明: 向串口写入 ``'uCode EP\n'`` ，最后的换行自动添加，用户只需要发送 ``'uCode EP'``
 
 .. function:: serial_ctrl.write_string(msg_string)
 
@@ -37,9 +37,9 @@ UART
 
     :return: 无
 
-    :示例: ``serial_ctrl.write_string('RoboMaster EP')``
+    :示例: ``serial_ctrl.write_string('uCode EP')``
 
-    :示例说明: 向串口写入 ``'RoboMaster EP'``
+    :示例说明: 向串口写入 ``'uCode EP'``
 
 .. function:: serial_ctrl.writ_numbers(key, value)
 

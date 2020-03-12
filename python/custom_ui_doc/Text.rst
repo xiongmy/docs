@@ -105,9 +105,9 @@ Text 控件用于显示文本
 
     :return: 无
 
-    :示例: ``my_Text.append_text('RoboMaster EP')``
+    :示例: ``my_Text.append_text('uCode EP')``
 
-    :示例说明: 向 Text 中增加的文字 ``RoboMaster EP``
+    :示例说明: 向 Text 中增加的文字 ``uCode EP``
 
 .. data:: align
 

@@ -24,9 +24,9 @@
 
     :return: 无
 
-    :示例: ``multi_comm_ctrl.send('RoboMaster EP', 3)``
+    :示例: ``multi_comm_ctrl.send('uCode EP', 3)``
 
-    :示例说明: 向组号 3 发送消息 ``'RoboMaster EP'``
+    :示例说明: 向组号 3 发送消息 ``'uCode EP'``
 
 .. function:: multi_comm_ctrl.recv_msg(timeout)
 
