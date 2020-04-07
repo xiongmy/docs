@@ -1,0 +1,120 @@
+body {
+  font-family: 'BebasNeue-Regular', sans-serif;
+  background: #FFF;
+}
+
+ul,li{
+  list-style: none;
+}
+#app{
+  position: relative;
+}
+@keyframes fade {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@media(max-width: 768px){
+  .scrollbar::-webkit-scrollbar {
+    height: 6px;
+    width: 0;
+    background-color: transparent;
+  }
+  .scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color:transparent;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: transparent;
+  }
+}
+
+.fade {
+  animation: fade 1s;
+}
+.common-container {
+  padding-top: 30px;
+  font-size: 14px;
+}
+.common-content {
+  padding: 30px;
+  p, img {
+    margin-top: 20px;
+    min-height: 100px;
+    display: block;
+  }
+  p {
+    font-size: 15px;
+  }
+  img {
+    width: 500px;
+  }
+}
+img {
+  user-select: none;
+}
+p{
+  img{
+    max-width: 100%;
+  }
+}
+.pulse {
+  animation-name: pulse;
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
+.ivu-loading-bar {
+  z-index: 999999;
+}
+
+@media(max-width: 768px){
+  .markdown-body{
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 16px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+
+  .ivu-dropdown-rel{
+    width: 84%;
+    margin: 0 auto;
+  }
+  .ivu-select-dropdown{
+    width: 100%!important;
+    height: 80px;
+    top:40px;
+    left:0;
+    background: #04070A;
+    margin: 0;
+    .ivu-dropdown-item{
+      width: 84%;
+      margin: 0 auto;
+    }
+    .ivu-dropdown-item-selected, .ivu-dropdown-item-selected:hover{
+      background: transparent;
+    }
+    .ivu-dropdown-item:hover{
+      background: transparent;
+    }
+   }
+}
+

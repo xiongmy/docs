@@ -1,0 +1,3 @@
+[submodule "ubt-web-analytics"]
+	path = ubt-web-analytics
+	url = git@gitlab.ubt.com:web/ubt-web-analytics.git
