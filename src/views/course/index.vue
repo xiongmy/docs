@@ -53,39 +53,14 @@ export default {
 </script>
 <style lang="scss" scoped>
   .course-content {
-    width: 1180px;
-    position: relative;
-    padding: 60px 0 10px 26%;
-    user-select: none;
+    border-top: 6px solid #eff3f8;
+    width: calc(100% - 200px);
+    height: calc(100vh - 58px);
+    overflow: auto;
+    float: left;
   }
-  /*@media(min-width: 768px){
-    .course-content{
-      max-height: 700px;
-      overflow-y: scroll;
-      &::-webkit-scrollbar{
-        width: 0;
-      }
-    }
-  }*/
-  @media screen and (min-width:769px) and (max-width:1200px) {
-    .course-container {
-      width: 100%;
-    }
-    .course-content{
-      width: auto;
-      padding: 80px 0 300px 26%;
-    }
-  }
-  @media(max-width: 768px){
-    .course-container{
-      width: 92%;
-      margin: 0 auto;
-      padding-top: 50px;
-      padding-bottom: 350px;
-      .course-content{
-        width: 100%;
-        padding: 0;
-      }
-    }
+  .common-container{
+    padding: 20px;
+    background: #fff;
   }
 </style>

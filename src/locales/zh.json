@@ -7,244 +7,65 @@
     "api": "Yanshee API",
     "download": "下载中心"
   },
-  "banner": {
-    "banner1": {
-      "title": "Yanshee，偃师",
-      "desc": "极尽工匠之所能，回溯、传承、教育",
-      "detail": "《列子·汤问》中记载，周穆王时期有一位能工巧匠，名偃师。 其制造的人偶栩栩如生、能歌善舞、富有人类情感。 由此，偃师的人偶被美誉为“机器人鼻祖”。 Yanshee回溯历史，传承中华工匠精神。 "
-    },
-    "banner2": {
-      "title": "Yanshee人形机器人",
-      "desc": "机器人运动规划，强大传感系统，AI算法集成，专业编程教育",
-      "detail": "17DOF仿人机器人，伺服舵机内置MCU，实现运动规划 支持红外、超声波、湿温度等多种传感器，内置陀螺仪，实现摔倒管理 覆盖步态算法、视觉及语音算法，实现运动规划、控制及多样人机交互 AI+Robot完善教程体系，入门级Blockly编程到高阶RESTful-API调用 "
-    }
-  },
-  "ability": {
-    "title": "Yanshee 能力架构",
-    "ability1": {
-      "title": "运动控制",
-      "desc": "1、17自由度伺服舵机，内置MCU，包含伺服控制、传感反馈及直流驱动系统。\n2、ROS-Gazebo运动仿真、正逆运动控制、步态算法学习。\n3、内置舞蹈、格斗等丰富动作库，同时支持自定义PRP回读编程动作并使用。\n"
-    },
-    "ability2": {
-      "title": "传感系统设计",
-      "desc": "1、支持五种POGO磁吸接口传感器：红外、超声波、温湿度、触摸、压力传感器。可随意组合，构成多样场景设计。\n2、内置九轴陀螺仪传感器，实时反馈姿态信息，机器人摔倒后可自动爬起。\n3、通过跨MCU设计获得传感器精准数据，用于多场景拓展教学。\n"
-    },
-    "ability3": {
-      "title": "机器视觉",
-      "desc": "1、搭载800万像素高清摄像头，支持机器人拍照、视频录制、网络视频流传输、视频监控等。\n2、支持人脸跟踪、检测、分析、识别和物体识别等AI模型，用户可上传自定义视频来训练模型，实现特定物体的机器人识别。 \n3、支持手眼互动，可通过颜色识别、形状识别、目标检测等视觉功能获得环境信息并完成机器人多种竞赛方案设计。\n4、\t平面化二次开发视觉接口，Blockly、RESTful-API全面支持。\n"
-    },
-    "ability4": {
-      "title": "语音识别",
-      "desc": "1、集成语音闲聊，强大的云服务后台支持。\n2、内置多种动作触发词，增强人机交互体验感。\n3、开放定制离线命令词，用户可根据需求自定义关键词，完成相应场景设计。\n4、语音识别、语义理解、TTS、语言翻译等多种AI算法模型，提供对应项目实践课程。\n"
-    },
-    "ability5": {
-      "title": "通信系统集成",
-      "desc": "1、\t局域网控制通信。包括UDP、TCP组播广播等常用通信方式，支持协议控制机器人内部功能模块。\n2、机器人集控通信。支持PC或一台主机器人，远程控制多台从机器人动作同步。\n3、\t机器人自组织通信。主机器人发起通讯需求，完成多台机器人组网与控制通讯。\n4、\tROS系统通信。支持通过ROS节点进行基本的机器人功能模块通信，实现ROS编程控制机器人内部功能，并支持跨平台多机ROS通信。\n5、\t物联网通信。天气站、Web控制、智能管家等强大的物联网IoT学习入口。\n"
-    },
-    "ability6": {
-      "title": "开放硬件平台",
-      "desc": "1、内置树莓派3B核心板、40pin-GPIO可拓展引脚。支持IIC、SPI、GPIO、UART、USB等多种总线协议接口。\n2、内置STM32开发板与树莓派通过IIC总线相连，完成舵机控制和传感器数据读取。\n3、支持所有树莓派开源实验，并可以结合机器人完成各种物联网IoT综合实验。\n4、局域网WIFI通信，支持UDP、TCP、HTTP等多种通信协议方式。\n5、开放标准舵机协议，支持用户定制化接口需求。\n"
-    },
-    "ability7": {
-      "title": "全开源软件开发平台",
-      "desc": "1、支持多语言开发。包括：C、C++、C#、PHP、Java、Curl、Python等常用主流开发语言。默认Python脚本格式，并通过Blockly引导编程。\n2、支持基于Http协议通信的跨平台RESTful API二次开发接口。包括：Windows、Linux、Mac OS 等。\n3、\t二次开发接口覆盖运动控制、设备控制、机器视觉、语音识别、机器模型训练等。\n4、支持用户接入第三方AI云服务API接口（例如：百度、微软、腾讯、Face++等），完成多种人工智能模型集成。\n"
-    },
-    "ability8": {
-      "title": "AI机器人课程体系",
-      "desc": "1、提供完善的课程教学内容。包括培训类教材及PPT、学期制的课程教材内容、学年制的课程大纲，老师可直接授课使用。\n2、课程覆盖：基础课程（Python基础、视觉基础、Linux基础等）、运动控制（Gazebo仿真、正逆运动学、步态算法、多舵机动作控制等）、机器视觉（人脸检测、人脸识别）、机器语音（ASR、TTS）、机器学习与深度学习（CNN、RNN、模型训练与目标检测等）、ROS系统、物联网IoT等丰富内容。\n3、课程编排体系化，知识架构由浅入深。从Blockly编程入门到Python等多种汇编语言实践，从舵机原理到步态算法，从基础通信原理到物联网机器人管家。\n4、适配多个学科专业。机器人工程、人工智能科学、自动化、电子信息工程等专业。\n5、一线工程师培训与指导，跟进使用反馈，共同探讨、深研机器人相关学科教育。\n"
-    }
-  },
-  "support": {
-    "course": {
-      "title": "人工智能课程",
-      "desc": "Yanshee+人工智能，Maker课程体系 步态规划、Gazebo仿真，玩转人形机器人 理论结合项目实践，强化动手能力"
-    },
-    "gaming": {
-      "title": "竞赛支持",
-      "desc": "培养机器人竞赛能力，提供权威机器人比赛入口。\n2017年“IEEE-优必选”中国机器人设计大赛;\n2019更多精彩竞赛敬请期待 ……\n"
-    }
-  },
-  "api": {
-    "title": "Yanshee 开源API",
-    "api1": {
-      "title": "舵机控制",
-      "desc": "舵机调用、控制"
-    },
-    "api2": {
-      "title": "步态规划",
-      "desc": "步态算法，机械臂仿真"
-    },
-    "api3": {
-      "title": "参数设置",
-      "desc": "机器人核心参数设置"
-    },
-    "api4": {
-      "title": "传感器",
-      "desc": "通过传感器，感知外部变化"
-    },
-    "api5": {
-      "title": "语音识别",
-      "desc": "语音、语义识别、TTS"
-    },
-    "api6": {
-      "title": "视觉识别",
-      "desc": "人脸检测、姿势识别"
-    },
-    "api7": {
-      "title": "多媒体",
-      "desc": "音频、视频等调取控制"
-    },
-    "api8": {
-      "title": "系统升级",
-      "desc": "机器人主体软件实时升级"
-    }
-  },
   "course":{
     "menu1":{
-      "title":"基础课程应用",
-      "menuChild":{
-        "menuChild1":"人工智能的Python基础",
-        "menuChild2":"机器人终端常用linux命令说明",
-        "menuChild3":"桌面版Blockly使用说明",
-        "menuChild4":"OpenCV开源视觉库使用介绍"
-      }
+      "title":"uCode百科百答概览"
     },
     "menu2":{
-      "title":"机器人通信",
+      "title":"uCode简介",
       "menuChild":{
-        "menuChild1":"机器人集控与通信控制",
-        "menuChild2":"标准ROS与机器人基本通信",
-        "menuChild3":"使用ROS与机器人多机通信"
+        "menuChild1":"什么是uCode",
+        "menuChild2":"uCode特性功能"
       }
     },
     "menu3":{
-      "title":"机器人运动学",
+      "title":"uCode下载、安装和升级",
       "menuChild":{
-        "menuChild1":"机器人生命的第一次转动",
-        "menuChild2":"舵机的回读与连续动作执行",
-        "menuChild3":"机器人基于Gazebo的运动仿真",
-        "menuChild4":"双足机器人正运动学基础",
-        "menuChild5":"双足机器人逆运动学入门与应用",
-        "menuChild6":"双足机器人步态算法应用"
+        "menuChild1": "uCode - 下载",
+        "menuChild2": "uCode - 安装",
+        "menuChild3": "uCode - 升级"
       }
     },
     "menu4":{
-      "title":"机器人传感系统",
+      "title":"舞台模式 - 积木说明",
       "menuChild":{
-        "menuChild1":"充满魔力的红外线传感器",
-        "menuChild2":"神秘的超声波传感器",
-        "menuChild3":"懂礼貌的触摸传感器",
-        "menuChild4":"知轻重的压力传感器",
-        "menuChild5":"知冷暖的温湿度传感器",
-        "menuChild6":"让机器人摔倒后自动爬起"
+        "menuChild1":"运动积木块",
+        "menuChild2":"外观积木块",
+        "menuChild3":"声音积木块",
+        "menuChild4":"时间积木块",
+        "menuChild5":"控制积木块",
+        "menuChild6":"侦测积木块",
+        "menuChild7": "侦测积木块",
+        "menuChild8": "运算积木块",
+        "menuChild9": "AI积木块"
       }
     },
     "menu5":{
-      "title":"机器学习基础与实践",
+      "title":"硬件-Explore",
       "menuChild":{
-        "menuChild1":"机器学习通俗应用",
-        "menuChild2":"机器学习之数学基础及工具篇",
-        "menuChild3":"机器学习算法进阶篇",
-        "menuChild4":"深度学习之感知器基础",
-        "menuChild5":"深度学习之卷积神经网络",
-        "menuChild6":"深度学习之循环神经网络",
-        "menuChild7":"深度学习之开源框架使用",
-        "menuChild8":"深度学习之部署模型到机器人",
-        "menuChild9":"强化学习与机器人互动"
+        "menuChild1":"简介",
+        "menuChild2":"如何连接 uKit Explore",
+        "menuChild3":"Explore - 积木说明",
+        "menuChild4":"上传模式 - uKit Explore",
+        "menuChild5":"上传模式 - 积木说明",
+        "menuChild6":"Arduino IDE 使用说明"
       }
     },
     "menu6":{
-      "title":"机器人语音",
+      "title":"硬件 - 悟空",
       "menuChild":{
-        "menuChild1":"声音传播中的秘密",
-        "menuChild2":"语音交互-ASR",
-        "menuChild3":"语音交互-TTS",
-        "menuChild4":"语音识别简单模型应用",
-        "menuChild5":"机器翻译模型应用"
+        "menuChild1":"简介",
+        "menuChild2":"如何连接悟空机器人？",
+        "menuChild3":"悟空 - 积木说明"
       }
     },
     "menu7":{
-      "title":"机器人视觉",
+      "title":"3D模型搭建",
       "menuChild":{
-        "menuChild1":"图像及视频记录中的奥妙",
-        "menuChild2":"能分辨颜色的机器人视觉",
-        "menuChild3":"人工智能的多彩世界",
-        "menuChild4":"让机器人捕捉你的脸",
-        "menuChild5":"让机器人看脸辨人",
-        "menuChild6":"让机器人看图识物",
-        "menuChild7":"OCR文字图片识别",
-        "menuChild8":"图像分类与模型优化",
-        "menuChild9":"目标检测与机器人应用"
-      }
-    },
-    "menu8":{
-      "title":"AIOT物联网应用",
-      "menuChild":{
-        "menuChild1":"树莓派趣味实验合集",
-        "menuChild2":"IoT智能家居与机器人应用"
-      }
-    },
-    "menu9":{
-      "title":"开源拓展",
-      "menuChild":{
-        "menuChild1":"第三方API云服务集成",
-        "menuChild2":"多语言支持的RESTful-API接口开发",
-        "menuChild3":"综合实验课之智能开发与竞技",
-        "menuChild4":"附录-Yanshee机器人SDK使用说明"
+        "menuChild1":"什么事模型3D搭建",
+        "menuChild2":"什么事零件清单"
       }
     }
-  },
-  "yansheeApi": {
-    "download": {
-      "title": "请选择您的Yanshee版本",
-      "link": "如何查看Yanshee版本？",
-      "version1": {
-        "name": "V 1.5.0及以上",
-        "description": "Yanshee RESTful API"
-      },
-      "version2": {
-        "name": "V 1.3.4及以下",
-        "description": "Yanshee升级教程"
-      }
-    },
-    "version": {
-      "link": "选择Yanshee版本",
-      "step1": "步骤1：打开Yanshee",
-      "step2": "步骤2：通过HDMI线将Yanshee链接至显示屏",
-      "step3": "步骤3：进入“桌面”-“设置”-“设备信息”",
-      "step4": "步骤4：查看“设备信息”中的版本号"
-    }
-  },
-  "yansheeDownload": {
-    "firmWare": {
-      "title": "Yanshee 主体软件下载",
-      "downloadMenu1": "主体软件升级教程",
-      "downloadMenu2": "更新日志",
-      "downloadMenu3": "查看Yanshee版本"
-    },
-    "app": {
-      "title": "Yanshee APP下载",
-      "text1": "Yanshee APP支持iOS及Android双系统",
-      "text2": "移动端扫一扫右图二维码即可下载使用。",
-      "desc1": "通过Yanshee APP，可以实现移动端Blockly编程、机器人动作控制，如拳击、跳舞等。",
-      "desc2": "Yanshee  APP 通过账号登陆，提供Yanshee使用指南、相关课程在线观看，同时支持社区Yanshee作品分享，在分享中成长。"
-    },
-    "help": {
-      "title": "Yanshee 使用教程",
-      "text": "提供Yanshee基本使用操作的教程下载",
-      "desc": "点击右侧“Yanshee使用说明”下载",
-      "link": "Yanshee使用说明"
-    }
-  },
-  "footer": {
-    "case": "Yanshee方案",
-    "concat": "联系我们",
-    "qrCode": "关注我们",
-    "course": "系统课程",
-    "download": "下载中心",
-    "api": "开源API",
-    "question": "常见问题",
-    "address": "中国广东省深圳市南山区学苑大道1001号南山智园C1栋19楼"
   }
 }
 

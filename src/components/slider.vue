@@ -1,43 +1,37 @@
 <template>
   <!-- 公用slider -->
-  <div style="position: relative">
-    <div class="slider-bg" :style="{'background': showSlider ?'rgba(10,16,23,.5)':'transparent'}" v-show="showSlider">
-      <div class="slider scrollbar" id="slider" ref="slider" v-if="openNames">
-        <Menu
-          class="slider-menu"
-          ref="menu"
-          v-if="curBreadPath"
-          @on-select="checkMenu"
-          :width="'100%'"
-          :theme="theme1"
-          :open-names="openNames"
-          :active-name="activeName"
-        >
-          <template v-for="(item, index) in menuList">
-            <Menu-item
-              v-if="curBreadPath === 'guide'"
-              :ref="`${item.path}`"
-              :to="`/${$i18n.locale}/${curBreadPath}/${item.path}`"
-              :name="`${item.path}`"
-              :key="index">
-              {{$t(`${item.meta.title}`)}}
-            </Menu-item>
-            <Submenu
-              v-if="curBreadPath === 'course'"
-              :name="index"
-              :key="index">
-              <template slot="title">
-                {{$t(`${item[0].meta.subTitle}`)}}
-              </template>
-              <MenuItem :ref="`${v.path}`" :id="v.path" :to="`/${$i18n.locale}/${curBreadPath}/${v.path}`" :name="v.path" v-for="(v, i) in item" :key="i">
-                {{$t(`${v.meta.title}`)}}
-              </MenuItem>
-            </Submenu>
+  <div class="slider scrollbar" id="slider" ref="slider" v-if="openNames">
+    <Menu
+      class="slider-menu"
+      ref="menu"
+      v-if="curBreadPath"
+      @on-select="checkMenu"
+      :width="'100%'"
+      :theme="theme1"
+      :open-names="openNames"
+      :active-name="activeName"
+    >
+      <template v-for="(item, index) in menuList">
+        <Menu-item
+          v-if="curBreadPath === 'guide'"
+          :ref="`${item.path}`"
+          :to="`/${$i18n.locale}/${curBreadPath}/${item.path}`"
+          :name="`${item.path}`"
+          :key="index">
+          {{$t(`${item.meta.title}`)}}
+        </Menu-item>
+        <Submenu         
+          :name="index"
+          :key="index">
+          <template slot="title">
+            {{$t(`${item[0].meta.subTitle}`)}}
           </template>
-        </Menu>
-      </div>
-    </div>
-    <div :class="['menu-tag',{'active':showSlider}]" @click="toggleSlider()"></div>
+          <MenuItem :ref="`${v.path}`" v-if="item.length > 1"  :id="v.path" :to="`/${$i18n.locale}/${curBreadPath}/${v.path}`" :name="v.path" v-for="(v, i) in item" :key="i">
+            {{$t(`${v.meta.title}`)}}
+          </MenuItem>
+        </Submenu>
+      </template>
+    </Menu>
   </div>
 
 </template>
@@ -87,6 +81,7 @@ export default {
     const { path } = this.$route;
     this.activeName = (path.split('/')[3]);
     this.getOpenName();
+    console.log(this.menuList)
   },
   methods: {
     checkMenu(activeName) {
@@ -125,24 +120,17 @@ export default {
 </script>
 
 <style lang="scss">
-  .slider-bg{
-    position: relative;
-  }
+ 
   .slider {
-    top: 86px;
-    bottom:100px;
-    z-index: 1;
-    position: fixed;
-    /*overflow-x: scroll;*/
-    min-width: 15%;
-    max-width: 15%;
-    height:552px;
-    overflow: scroll;
+    float: left;
+    width: 200px;
+    padding-top: 20px;
+    height: calc(100vh - 58px);
+    background: #CAD3DE;
   }
   .ivu-menu-vertical .ivu-menu-submenu-title-icon{
     right: 5px;
   }
-  @media(min-width: 769px){
   .slider::-webkit-scrollbar {
     height: 6px;
     width: 6px;
@@ -155,11 +143,9 @@ export default {
     border-radius: 6px;
     background-color: rgba(69,90,100,.2);
   }
-}
   .slider-menu{
     padding-bottom: 35px;
     padding-top: 35px;
-    background: #F5F6FA!important;
   }
 
   // 改写menu样式
@@ -204,63 +190,9 @@ export default {
   .slider .ivu-menu-item {
     font-size: 13px;
   }
-  .munu {
-    background: #F5F6FA;
-  }
   .slider-menu::after {
     content: '';
     background: transparent;
   }
-  @media screen and (min-width:769px) and (max-width:1200px) {
-    .slider {
-      top: 80px;
-      // bottom: 30px;
-      // height: 400px;
-      z-index: 1;
-      position: fixed;
-      overflow-x: scroll;
-      min-width: 20%;
-      max-width: 20%;
-    }
-  }
-  @media(max-width: 768px){
-    .slider-bg{
-      position: fixed;
-      width:100%;
-      height:100%;
-      left:0;
-      top:0;
-      background: rgba(10,16,23,.5);
-      z-index: 99;
-    }
-    .slider{
-      top:40px;
-      left: -160px;
-      max-width: 1190px;
-      height: 450px;
-      width: 190px;
-      .slider-menu{
-        width: 160px !important;
-        background: #F5F6FA;
-        .ivu-menu-item{
-          font-size:12px;
-        }
-      }
-    }
-    .menu-tag{
-      position: fixed;
-      left:-3px;
-      top:64px;
-      width:34px;
-      height:36px;
-      background: url("../assets/images/common/ic_dropdown_down.png") no-repeat center;
-      background-size:auto 100%;
-      z-index: 99;
-      &.active{
-        left: 157px;
-        background: url("../assets/images/common/ic_dropdown_up.png") no-repeat center;
-        background-size:auto 100%;
-      }
-    }
-  }
+
 </style>

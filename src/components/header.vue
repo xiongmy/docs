@@ -95,9 +95,10 @@ export default {
     flex: 1;
     cursor: pointer;
     .logo-icon{
+      float: left;
       width: 113px;
       height: 51px;
-      background: url(../assets/images/common/top_logo.svg) no-repeat center;
+      background: url("../assets/images/common/top_logo.png") no-repeat center;
       background-size: 100% auto;
     }
     .logo-text{

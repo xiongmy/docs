@@ -87,31 +87,5 @@ export default {
   color: #2c3e50;
   margin: 0 auto;
 }
-.body-content {
-  position: relative;
-  width: 1180px;
-  margin: 0 auto;
-  min-height: 700px;
-  padding-top: 28px;
-  padding-bottom: 300px;
-  z-index: 99;
-}
-@media screen and (min-width:769px) and (max-width:1200px){
-  .body-content {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 500px;
-    padding: 0;
-  }
-}
-@media (max-width: 768px) {
-  .body-content {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 500px;
-    padding: 0;
-  }
-}
+
 </style>
