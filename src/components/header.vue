@@ -3,7 +3,7 @@
     <div class="line"></div>
     <div class="left-box" @click="toHomePage">
       <div class="logo-icon"></div>
-      <div class="logo-text">用户使用指引手册</div>
+      <div class="logo-text">{{$t('appTitle')}}</div>
     </div>
     <Menu class="menu" @on-select="checkMenu" mode="horizontal" :theme="theme1" :active-name="activeName">                
         <!-- <Menu-item name=""> -->
@@ -66,9 +66,10 @@ export default {
     check(lang) {
       const { path, name } = this.$route;
       this.$i18n.locale = lang;
-      this.getLocalPathName();     
+      this.getLocalPathName();
+      console.log(path)
       this.$router.push({
-        path: path.replace(path.split('/')[1], lang),
+        path: `/${lang}/course`,
       });
     },
   },

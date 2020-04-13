@@ -13,20 +13,22 @@
     >
       <template v-for="(item, index) in menuList">
         <Menu-item
-          v-if="curBreadPath === 'guide'"
+          v-if="item.length === 1"   
           :ref="`${item.path}`"
-          :to="`/${$i18n.locale}/${curBreadPath}/${item.path}`"
+          :to="`/${$i18n.locale}/course/${item[0].path}`"
           :name="`${item.path}`"
           :key="index">
-          {{$t(`${item.meta.title}`)}}
+            {{$t(`${item[0].meta.subTitle}`)}}
         </Menu-item>
-        <Submenu         
+
+        <Submenu  
+          v-if="item.length > 1"        
           :name="index"
           :key="index">
           <template slot="title">
             {{$t(`${item[0].meta.subTitle}`)}}
           </template>
-          <MenuItem :ref="`${v.path}`" v-if="item.length > 1"  :id="v.path" :to="`/${$i18n.locale}/${curBreadPath}/${v.path}`" :name="v.path" v-for="(v, i) in item" :key="i">
+          <MenuItem :ref="`${v.path}`"  :id="v.path" :to="`/${$i18n.locale}/${curBreadPath}/${v.path}`" :name="v.path" v-for="(v, i) in item" :key="i">
             {{$t(`${v.meta.title}`)}}
           </MenuItem>
         </Submenu>
@@ -127,6 +129,7 @@ export default {
     padding-top: 20px;
     height: calc(100vh - 58px);
     background: #CAD3DE;
+    overflow: auto;
   }
   .ivu-menu-vertical .ivu-menu-submenu-title-icon{
     right: 5px;

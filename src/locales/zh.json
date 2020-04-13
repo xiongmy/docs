@@ -1,71 +1,66 @@
 {
-  "appTitle": "Yanshee 开发者",
+  "appTitle": "uCode用户指引手册",
   "lang": "语言",
-  "menu": {
-    "guide": "Yanshee指南",
-    "course": "Yanshee教程",
-    "api": "Yanshee API",
-    "download": "下载中心"
-  },
-  "course":{
-    "menu1":{
-      "title":"uCode百科百答概览"
+  "previous": "上一篇",
+  "next": "下一篇",
+  "course": {
+    "menu1": {
+      "title": "uCode百科百答概览"
     },
-    "menu2":{
-      "title":"uCode简介",
-      "menuChild":{
-        "menuChild1":"什么是uCode",
-        "menuChild2":"uCode特性功能"
+    "menu2": {
+      "title": "uCode简介",
+      "menuChild": {
+        "menuChild1": "什么是uCode",
+        "menuChild2": "uCode特性功能"
       }
     },
-    "menu3":{
-      "title":"uCode下载、安装和升级",
-      "menuChild":{
+    "menu3": {
+      "title": "uCode下载、安装和升级",
+      "menuChild": {
         "menuChild1": "uCode - 下载",
         "menuChild2": "uCode - 安装",
         "menuChild3": "uCode - 升级"
       }
     },
-    "menu4":{
-      "title":"舞台模式 - 积木说明",
-      "menuChild":{
-        "menuChild1":"运动积木块",
-        "menuChild2":"外观积木块",
-        "menuChild3":"声音积木块",
-        "menuChild4":"时间积木块",
-        "menuChild5":"控制积木块",
-        "menuChild6":"侦测积木块",
-        "menuChild7": "侦测积木块",
+    "menu4": {
+      "title": "舞台模式 - 积木说明",
+      "menuChild": {
+        "menuChild1": "运动积木块",
+        "menuChild2": "外观积木块",
+        "menuChild3": "声音积木块",
+        "menuChild4": "事件积木块",
+        "menuChild5": "控制积木块",
+        "menuChild6": "侦测积木块",
+        "menuChild7": "运算积木块",
         "menuChild8": "运算积木块",
         "menuChild9": "AI积木块"
       }
     },
-    "menu5":{
-      "title":"硬件-Explore",
-      "menuChild":{
-        "menuChild1":"简介",
-        "menuChild2":"如何连接 uKit Explore",
-        "menuChild3":"Explore - 积木说明",
-        "menuChild4":"上传模式 - uKit Explore",
-        "menuChild5":"上传模式 - 积木说明",
-        "menuChild6":"Arduino IDE 使用说明"
+    "menu5": {
+      "title": "硬件-Explore",
+      "menuChild": {
+        "menuChild1": "简介",
+        "menuChild2": "如何连接 uKit Explore",
+        "menuChild3": "Explore - 积木说明",
+        "menuChild4": "上传模式 - uKit Explore",
+        "menuChild5": "上传模式 - 积木说明",
+        "menuChild6": "Arduino IDE 使用说明"
       }
     },
-    "menu6":{
-      "title":"硬件 - 悟空",
-      "menuChild":{
-        "menuChild1":"简介",
-        "menuChild2":"如何连接悟空机器人？",
-        "menuChild3":"悟空 - 积木说明"
+    "menu6": {
+      "title": "硬件 - 悟空",
+      "menuChild": {
+        "menuChild1": "简介",
+        "menuChild2": "如何连接悟空机器人？",
+        "menuChild3": "悟空 - 积木说明"
       }
     },
-    "menu7":{
-      "title":"3D模型搭建",
-      "menuChild":{
-        "menuChild1":"什么事模型3D搭建",
-        "menuChild2":"什么事零件清单"
+    "menu7": {
+      "title": "3D模型搭建",
+      "menuChild": {
+        "menuChild1": "什么是模型3D搭建",
+        "menuChild2": "什么是零件清单"
       }
     }
   }
 }
-

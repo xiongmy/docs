@@ -24,7 +24,7 @@ export default new Router({
     {
       path: '/en/course',
       component: Course,
-      redirect: '/en/course/course3-1',
+      redirect: '/en/course/course1-1',
       children: CourseChildrenEn,
     },
   ],

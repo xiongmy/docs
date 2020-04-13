@@ -1,70 +1,50 @@
 {
-  "appTitle": "Yanshee 开发者",
-  "lang": "语言",
-  "menu": {
-    "guide": "Yanshee指南",
-    "course": "Yanshee教程",
-    "api": "Yanshee API",
-    "download": "下载中心"
-  },
+  "appTitle": "uCode User Guidebook",
+  "lang": "language",
+  "previous": "previous",
+  "next": "next",
   "course": {
     "menu1": {
-      "title": "uCode百科百答概览"
+      "title": "Block Guide"
     },
     "menu2": {
-      "title": "uCode简介",
-      "menuChild": {
-        "menuChild1": "什么是uCode",
-        "menuChild2": "uCode特性功能"
-      }
+      "title": "What is uCode?"
     },
     "menu3": {
-      "title": "uCode下载、安装和升级",
+      "title": "Stage Mode - Block Reference",
       "menuChild": {
-        "menuChild1": "uCode - 下载",
-        "menuChild2": "uCode - 安装",
-        "menuChild3": "uCode - 升级"
+        "menuChild1": "Sports Building Blocks",
+        "menuChild2": "Appearance building blocks",
+        "menuChild3": "Sound building blocks",
+        "menuChild4": "Event building blocks",
+        "menuChild5": "Controlling building blocks",
+        "menuChild6": "Detect building blocks",
+        "menuChild7": "Operational building blocks",
+        "menuChild8": "AI building blocks "
       }
     },
     "menu4": {
-      "title": "舞台模式 - 积木说明",
+      "title": "Explore",
       "menuChild": {
-        "menuChild1": "运动积木块",
-        "menuChild2": "外观积木块",
-        "menuChild3": "声音积木块",
-        "menuChild4": "时间积木块",
-        "menuChild5": "控制积木块",
-        "menuChild6": "侦测积木块",
-        "menuChild7": "侦测积木块",
-        "menuChild8": "运算积木块",
-        "menuChild9": "AI积木块"
+        "menuChild1": "Sports building blocks",
+        "menuChild2": "Acousto-optic building blocks",
+        "menuChild3": "Perception building blocks",
+        "menuChild4": "Start building blocks",
+        "menuChild5": "Sports building blocks",
+        "menuChild6": "Acousto-optic building blocks",
+        "menuChild7": "Perceptual building blocks",
+        "menuChild8": "Logic building blocks",
+        "menuChild9": "Math building blocks"
       }
     },
     "menu5": {
-      "title": "硬件-Explore",
-      "menuChild": {
-        "menuChild1": "简介",
-        "menuChild2": "如何连接 uKit Explore",
-        "menuChild3": "Explore - 积木说明",
-        "menuChild4": "上传模式 - uKit Explore",
-        "menuChild5": "上传模式 - 积木说明",
-        "menuChild6": "Arduino IDE 使用说明"
-      }
+      "title": "3D Building Instructions"
     },
     "menu6": {
-      "title": "硬件 - 悟空",
-      "menuChild": {
-        "menuChild1": "简介",
-        "menuChild2": "如何连接悟空机器人？",
-        "menuChild3": "悟空 - 积木说明"
-      }
+      "title": "Explore connection"
     },
     "menu7": {
-      "title": "3D模型搭建",
-      "menuChild": {
-        "menuChild1": "什么事模型3D搭建",
-        "menuChild2": "什么事零件清单"
-      }
+      "title": "Upload Mode-Block Description"
     }
   }
 }
