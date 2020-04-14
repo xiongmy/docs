@@ -78,6 +78,18 @@ export default [
     component: 'course3-6',
   },
   {
+    path: 'course3-7',
+    subTitle: 'course.menu3.title',
+    title: 'course.menu3.menuChild.menuChild7',
+    component: 'course3-7',
+  },
+  {
+    path: 'course3-8',
+    subTitle: 'course.menu3.title',
+    title: 'course.menu3.menuChild.menuChild8',
+    component: 'course3-8',
+  },
+  {
     path: 'course4-1',
     subTitle: 'course.menu4.title',
     title: 'course.menu4.menuChild.menuChild1',
@@ -112,6 +124,24 @@ export default [
     subTitle: 'course.menu4.title',
     title: 'course.menu4.menuChild.menuChild6',
     component: 'course4-6',
+  },
+  {
+    path: 'course4-7',
+    subTitle: 'course.menu4.title',
+    title: 'course.menu4.menuChild.menuChild7',
+    component: 'course4-7',
+  },
+  {
+    path: 'course4-8',
+    subTitle: 'course.menu4.title',
+    title: 'course.menu4.menuChild.menuChild8',
+    component: 'course4-8',
+  },
+  {
+    path: 'course4-9',
+    subTitle: 'course.menu4.title',
+    title: 'course.menu4.menuChild.menuChild9',
+    component: 'course4-9',
   },
   {
     path: 'course5-1',
@@ -238,54 +268,5 @@ export default [
     subTitle: 'course.menu7.title',
     title: 'course.menu7.menuChild.menuChild7',
     component: 'course7-7',
-  },
-  {
-    path: 'course7-8',
-    subTitle: 'course.menu7.title',
-    title: 'course.menu7.menuChild.menuChild8',
-    component: 'course7-8',
-  },
-  {
-    path: 'course7-9',
-    subTitle: 'course.menu7.title',
-    title: 'course.menu7.menuChild.menuChild9',
-    component: 'course7-9',
-  },
-
-  {
-    path: 'course8-1',
-    subTitle: 'course.menu8.title',
-    title: 'course.menu8.menuChild.menuChild1',
-    component: 'course8-1',
-  },
-  {
-    path: 'course8-2',
-    subTitle: 'course.menu8.title',
-    title: 'course.menu8.menuChild.menuChild2',
-    component: 'course8-2',
-  },
-  {
-    path: 'course9-1',
-    subTitle: 'course.menu9.title',
-    title: 'course.menu9.menuChild.menuChild1',
-    component: 'course9-1',
-  },
-  {
-    path: 'course9-2',
-    subTitle: 'course.menu9.title',
-    title: 'course.menu9.menuChild.menuChild2',
-    component: 'course9-2',
-  },
-  {
-    path: 'course9-3',
-    subTitle: 'course.menu9.title',
-    title: 'course.menu9.menuChild.menuChild3',
-    component: 'course9-3',
-  },
-  {
-    path: 'course9-4',
-    subTitle: 'course.menu9.title',
-    title: 'course.menu9.menuChild.menuChild4',
-    component: 'course9-4',
   },
 ];

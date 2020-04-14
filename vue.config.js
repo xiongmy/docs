@@ -84,10 +84,10 @@ module.exports = {
   chainWebpack: (config) => {
     config.module
       .rule('images')
-      .test(/\.(png|svg|jpg|gif|otf)$/i)
+      .test(/\.(png|svg|jpg|jpeg|gif|otf)$/i)
       .use('url-loader')
       .loader('url-loader')
-      .tap(options => Object.assign(options, { limit: 10240 }));
+      .tap(options => Object.assign(options, { limit: 1024 }));
     config.module
       .rule('md')
       .test(/\.md/)

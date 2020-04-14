@@ -26,6 +26,7 @@ export default {
   },
   mounted() {
     this.filterMenu();
+    console.log(this.menuList)
   },
   watch: {
     '$i18n.locale': function localeChange() {

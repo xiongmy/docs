@@ -18,7 +18,7 @@ function loadMdFile() {
  */
 const files = loadMdFile();
 const Routes = Course.filter(val => files.includes(`${val.path}`) && val);
-
+console.log(Course)
 
 const createRoutes = Routes.map(val => ({
   path: val.path,

@@ -67,7 +67,6 @@ export default {
       const { path, name } = this.$route;
       this.$i18n.locale = lang;
       this.getLocalPathName();
-      console.log(path)
       this.$router.push({
         path: `/${lang}/course`,
       });
@@ -113,6 +112,9 @@ export default {
 }
 .ivu-menu-dark{
   background: transparent;
+}
+.menu{
+  padding-right: 20px;
 }
  
 </style>
