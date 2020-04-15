@@ -6,7 +6,6 @@
     <transition name="fade" mode="out-in" v-on:after-enter="afterEnter">
       <router-view class="body-content"/>
     </transition>
-    <Footer v-if="showFooter" />
   </div>
 </template>
 
@@ -16,12 +15,10 @@ import commonHeader from '@/components/header.vue';
 
 export default {
   components: {
-    commonHeader,
+    commonHeader
   },
   data() {
-    return {
-      showFooter: false,
-    };
+    return {};
   },
   created() {
     document.querySelector('body').classList.add('scrollbar');

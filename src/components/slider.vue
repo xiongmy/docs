@@ -190,6 +190,9 @@ export default {
   .ivu-menu-light {
     background: transparent;
   }
+  .ivu-menu {
+    color: #546B7C;
+  }
   .slider .ivu-menu-item {
     font-size: 13px;
   }

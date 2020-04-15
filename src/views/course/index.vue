@@ -8,10 +8,12 @@
         </transition>
       </div>
     </div>
+    <buttons :pathList="pathList"></buttons>
   </div>
 </template>
 <script>
 import slider from '@/components/slider.vue';
+import buttons from '@/components/buttons.vue';
 import { getMenuList } from '@/utils/util';
 
 export default {
@@ -19,14 +21,14 @@ export default {
   data() {
     return {
       menuList: [],
+      pathList:[],
     };
   },
   components: {
-    slider,
+    slider,buttons
   },
   mounted() {
     this.filterMenu();
-    console.log(this.menuList)
   },
   watch: {
     '$i18n.locale': function localeChange() {
@@ -48,6 +50,15 @@ export default {
         }
       });
       Object.keys(menu).map(val => this.menuList.push(menu[val]));
+      if(this.menuList.length){
+        this.menuList.map((val) => {
+          if(val instanceof Array){
+              val.map(v=>this.pathList.push(v.path));
+          }else{
+            this.pathList.push(val[0].path)
+          }
+        });
+      }
     },
   },
 };
