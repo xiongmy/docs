@@ -15,7 +15,7 @@ import commonHeader from '@/components/header.vue';
 
 export default {
   components: {
-    commonHeader
+    commonHeader,
   },
   data() {
     return {};

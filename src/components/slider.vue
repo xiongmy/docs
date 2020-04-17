@@ -13,7 +13,7 @@
     >
       <template v-for="(item, index) in menuList">
         <Menu-item
-          v-if="item.length === 1"   
+          v-if="item.length === 1"
           :ref="`${item[0].path}`"
           :to="`/${$i18n.locale}/course/${item[0].path}`"
           :name="`${item[0].path}`"
@@ -22,8 +22,8 @@
             {{$t(`${item[0].meta.subTitle}`)}}
         </Menu-item>
 
-        <Submenu  
-          v-if="item.length > 1"        
+        <Submenu
+          v-if="item.length > 1"
           :name="index"
           :key="index">
           <template slot="title">
@@ -84,15 +84,11 @@ export default {
     const { path } = this.$route;
     this.activeName = (path.split('/')[3]);
     this.getOpenName();
-    console.log(this.menuList)
   },
   methods: {
     checkMenu(activeName) {
-      console.log(activeName)
       this.activeName = activeName;
-      setTimeout(()=>{
-        document.getElementsByClassName('common-container')[0].scrollTo(0,0);
-      },1000)
+      document.getElementsByClassName('common-container')[0].scrollTo(0, 0);
     },
     /**
      * 更新sub-title
@@ -123,7 +119,7 @@ export default {
 </script>
 
 <style lang="scss">
- 
+
   .slider {
     float: left;
     width: 220px;

@@ -21,18 +21,17 @@ export default {
   data() {
     return {
       menuList: [],
-      pathList:[],
+      pathList: [],
     };
   },
   components: {
-    slider,buttons
+    slider, buttons,
   },
   mounted() {
     this.filterMenu();
   },
   watch: {
     '$i18n.locale': function localeChange() {
-      console.log('更新菜单')
       this.filterMenu();
     },
   },
@@ -40,7 +39,7 @@ export default {
     filterMenu() {
       const { $router } = this;
       const routes = getMenuList($router, `${this.$i18n.locale}/course`);
-      const menu = {};
+      const menu = [];
       this.menuList = [];
       this.pathList = [];
       routes.forEach((val) => {
@@ -52,16 +51,15 @@ export default {
         }
       });
       Object.keys(menu).map(val => this.menuList.push(menu[val]));
-      if(this.menuList.length){
+      if (this.menuList.length) {
         this.menuList.map((val) => {
-          if(val instanceof Array){
-              val.map(v=>this.pathList.push(v.path));
-          }else{
-            this.pathList.push(val[0].path)
+          if (val instanceof Array) {
+            val.map(v => this.pathList.push(v.path));
+          } else {
+            this.pathList.push(val[0].path);
           }
         });
       }
-      // console.log(this.pathList);
     },
   },
 };

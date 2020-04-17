@@ -5,7 +5,7 @@
       <div class="logo-icon"></div>
       <div class="logo-text">{{$t('appTitle')}}</div>
     </div>
-    <Menu class="menu" @on-select="checkMenu" mode="horizontal" :theme="theme1" :active-name="activeName">                
+    <Menu class="menu" @on-select="checkMenu" mode="horizontal" :theme="theme1" :active-name="activeName">
         <!-- <Menu-item name=""> -->
           <Dropdown class="check-lang"  @on-click="check">
             <div class="lang">
@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       theme1: 'dark',
-      activeName: ''
+      activeName: '',
     };
   },
   mounted() {
@@ -129,5 +129,5 @@ export default {
     background: url("../assets/images/common/dropdown_small.png") no-repeat center right;
   }
 }
- 
+
 </style>

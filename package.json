@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "dll": "webpack --config webpack.config.dll.js",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --fix --ext .js,.vue src",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "test:unit": "vue-cli-service test:unit"
   },
