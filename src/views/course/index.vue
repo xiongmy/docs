@@ -6,9 +6,9 @@
         <transition name="fade" mode="out-in">
           <router-view class="markdown-body"></router-view>
         </transition>
+        <buttons :pathList="pathList"></buttons>
       </div>
     </div>
-    <buttons :pathList="pathList"></buttons>
   </div>
 </template>
 <script>
@@ -32,6 +32,7 @@ export default {
   },
   watch: {
     '$i18n.locale': function localeChange() {
+      console.log('更新菜单')
       this.filterMenu();
     },
   },
@@ -41,6 +42,7 @@ export default {
       const routes = getMenuList($router, `${this.$i18n.locale}/course`);
       const menu = {};
       this.menuList = [];
+      this.pathList = [];
       routes.forEach((val) => {
         if (menu[val.meta.subTitle]) {
           menu[val.meta.subTitle].push(val);
@@ -59,6 +61,7 @@ export default {
           }
         });
       }
+      // console.log(this.pathList);
     },
   },
 };
@@ -66,13 +69,16 @@ export default {
 <style lang="scss" scoped>
   .course-content {
     border-top: 6px solid #eff3f8;
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     height: calc(100vh - 58px);
     overflow: auto;
     float: left;
   }
   .common-container{
-    padding: 20px;
+    position: relative;
+    min-height: calc(100vh - 70px);
+    padding: 30px 30px 60px 30px;
     background: #fff;
+    letter-spacing: 1px;
   }
 </style>

@@ -19,13 +19,34 @@ export default {
             required: true,
         },
     },
+    watch: {
+        $route(to,from){
+            this.updateButtons();
+        },
+        pathList(){
+            this.updateButtons();
+        }
+    },
     mounted(){
         const { path } = this.$route;
         this.activeName = path.split('/')[3];
         console.log(this.pathList)
         this.pagePos= this.activeName === 'course1-1'? -1 : 0;
     },
+    
     methods: {
+        updateButtons(){
+            console.log(this.pathList);
+            const { path } = this.$route;
+            this.activeName = (path.split('/')[3]);
+            if(this.pathList.indexOf(this.activeName)===0){
+                this.pagePos=-1
+            }else if(this.pathList.indexOf(this.activeName)===this.pathList.length-1 ){
+                this.pagePos=1
+            }else{
+                this.pagePos=0
+            }
+        },
         changePage(dir){
             this.activeName = this.$route.path.split('/')[3];
             let index = this.pathList.indexOf(this.activeName);            
@@ -54,24 +75,29 @@ export default {
 </script>
 <style lang="scss" scoped> 
 .button-box{
-    position: fixed;
-    bottom: 36px;
-    right: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -120px;
     display: flex;
-    width: 230px;
+    width: 240px;
     height: 30px;
     .button{
-        width: 100px;
+        width: 110px;
         margin-right: 10px;
         font-size:14px;
         color: #546B7C;
         line-height: 30px;
-        cursor: pointer;        
+        cursor: pointer;  
+        &.disabled{
+            color: #98AAC1;
+        }      
         span{
             display: inline-block;
             width: 42px;
             height: 30px;
             vertical-align: top;
+            
         }
         &.button-prev{
             span{
@@ -82,7 +108,6 @@ export default {
             span{
                 background: url('../assets/images/common/icon_behind_small_nor.png') no-repeat center;
                 transform: rotate(180deg);
-
             }
         }
         &.button-next{

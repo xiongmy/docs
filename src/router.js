@@ -12,7 +12,7 @@ export default new Router({
   routes: [
     {
       path: '',
-      redirect: '/zh/course',
+      redirect: '/zh/course/course1-1',
       component: Course,
     },
     {
@@ -24,7 +24,7 @@ export default new Router({
     {
       path: '/en/course',
       component: Course,
-      redirect: '/en/course/course1-1',
+      redirect: '/en/course/course2-1',
       children: CourseChildrenEn,
     },
   ],

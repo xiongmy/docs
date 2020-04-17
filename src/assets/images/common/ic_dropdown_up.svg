@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>ic_dropdown_up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ucode百科百答概览" transform="translate(-160.000000, -87.000000)">
+            <g id="编组-7" transform="translate(0.000000, 79.000000)">
+                <g id="编组-15" transform="translate(160.000000, 8.000000)">
+                    <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M10,9 C10.5522847,9 11,9.44771525 11,10 L11,14 L15,14 C15.5522847,14 16,14.4477153 16,15 C16,15.5522847 15.5522847,16 15,16 L10,16 L10,16 C9.44771525,16 9,15.5522847 9,15 L9,10 C9,9.44771525 9.44771525,9 10,9 Z" id="形状结合" fill="#778AA3" transform="translate(12.500000, 12.500000) scale(1, -1) rotate(-45.000000) translate(-12.500000, -12.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

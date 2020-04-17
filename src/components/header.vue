@@ -8,10 +8,9 @@
     <Menu class="menu" @on-select="checkMenu" mode="horizontal" :theme="theme1" :active-name="activeName">                
         <!-- <Menu-item name=""> -->
           <Dropdown class="check-lang"  @on-click="check">
-            <a href="javascript:void(0)">
-              {{$t('lang')}}
-              <Icon type="ios-arrow-down"></Icon>
-            </a>
+            <div class="lang">
+              <i class="arrow-icon"></i>
+            </div>
             <Dropdown-menu slot="list">
               <Dropdown-item :selected="$i18n.locale === 'zh'" name="zh">简体中文</Dropdown-item>
               <Dropdown-item :selected="$i18n.locale === 'en'" name="en">English</Dropdown-item>
@@ -47,7 +46,7 @@ export default {
     ...mapActions(['getBreadName']),
     toHomePage() {
       this.$router.push({
-        name: '',
+        path: `/${this.$i18n.locale}/course`,
       });
     },
     checkMenu(activeName) {
@@ -115,6 +114,20 @@ export default {
 }
 .menu{
   padding-right: 20px;
+}
+.lang{
+  display: block;
+  width: 50px;
+  height: 58px;
+  background: url("../assets/images/common/icon_language.png") no-repeat left;
+  background-size:28px;
+  cursor: pointer;
+  .arrow-icon{
+    width: 50px;
+    height: 58px;
+    display: inline-block;
+    background: url("../assets/images/common/dropdown_small.png") no-repeat center right;
+  }
 }
  
 </style>

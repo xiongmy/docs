@@ -14,10 +14,11 @@
       <template v-for="(item, index) in menuList">
         <Menu-item
           v-if="item.length === 1"   
-          :ref="`${item.path}`"
+          :ref="`${item[0].path}`"
           :to="`/${$i18n.locale}/course/${item[0].path}`"
-          :name="`${item.path}`"
-          :key="index">
+          :name="`${item[0].path}`"
+          :key="index"
+          >
             {{$t(`${item[0].meta.subTitle}`)}}
         </Menu-item>
 
@@ -87,11 +88,11 @@ export default {
   },
   methods: {
     checkMenu(activeName) {
+      console.log(activeName)
       this.activeName = activeName;
-      if (parseInt(document.body.clientWidth, 10) <= 768) {
-        this.showSlider = false;
-        document.getElementById('slider').style.left = '-160px';
-      }
+      setTimeout(()=>{
+        document.getElementsByClassName('common-container')[0].scrollTo(0,0);
+      },1000)
     },
     /**
      * 更新sub-title
@@ -101,10 +102,10 @@ export default {
         this.$refs.menu.updateOpened();
         this.$refs.menu.updateActiveName();
         const slider = document.getElementById('slider');
-        setTimeout(() => {
-          const item = this.$refs[this.activeName];
-          slider.scrollTo(0, item[0].$el.offsetTop + 35);
-        }, 0);
+        // setTimeout(() => {
+        //   const item = this.$refs[this.activeName];
+        //   slider.scrollTo(0, item[0].$el.offsetTop + 35);
+        // }, 0);
       });
     },
     toggleSlider() {
@@ -125,7 +126,7 @@ export default {
  
   .slider {
     float: left;
-    width: 200px;
+    width: 220px;
     padding-top: 20px;
     height: calc(100vh - 58px);
     background: #CAD3DE;
@@ -185,7 +186,8 @@ export default {
     background-color: transparent;
   }
   .ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title {
-    padding: 8px 24px;
+    padding: 10px 24px;
+    font-size:13px ;
   }
   .ivu-menu-light {
     background: transparent;

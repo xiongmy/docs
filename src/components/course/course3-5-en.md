@@ -16,14 +16,12 @@
 ●   Define my variable with an initial value of i, an end value of j, and a step size of n. Each time i increases by n (i = i + n), the script blocks included are executed when i is less than j, otherwise the loop blocks are skipped.  
 ● 	Example:  
 
-for (i = 1; i <10, i ++)  
+for (i = 1; i <=10, i ++)  
 {  
 Loop body statement;  
-}} 
-
-This loop will be executed 9 times (in the case of i = 0 to i = 10) Its execution process is this:  
-First assign an initial value of 1 to the variable i, and then judge, if the condition i <10 (yes) is satisfied, the statement of the loop body is executed, and then i ++ is completed, that is, i = i + 1; i becomes 2 and then judges If the condition i <10 is satisfied (still), the statement of the loop body is executed again, and i ++ is continued after completion. When i becomes 10,  
-it is judged whether the condition i <10 is satisfied, and it is found that it is no longer satisfied, and then exits the loop.
+}  
+This loop will be executed 10 times (in the case of i = 1 to i = 10) Its execution process is this:
+First assign an initial value of 1 to the variable i, and then judge, if the condition i <=10 (yes) is satisfied, the statement of the loop body is executed, and then i ++ is completed, that is, i = i + 1; i becomes 2 and then judges If the condition i <=10 is satisfied (still), the statement of the loop body is executed again, and i ++ is continued after completion. When i becomes 11,it is judged whether the condition i <=10 is satisfied, and it is found that it is no longer satisfied, and then exits the loop.
 
 #### 5.	If <condition> then ()
 ![](../../assets/images/course-en/course3/course3-5/005.jpeg)  
