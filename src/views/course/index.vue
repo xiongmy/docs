@@ -52,7 +52,7 @@ export default {
       });
       Object.keys(menu).map(val => this.menuList.push(menu[val]));
       if (this.menuList.length) {
-        this.menuList.map((val) => {
+        this.menuList.forEach((val) => {
           if (val instanceof Array) {
             val.map(v => this.pathList.push(v.path));
           } else {

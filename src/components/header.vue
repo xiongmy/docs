@@ -63,7 +63,6 @@ export default {
       });
     },
     check(lang) {
-      const { path, name } = this.$route;
       this.$i18n.locale = lang;
       this.getLocalPathName();
       this.$router.push({

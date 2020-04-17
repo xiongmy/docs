@@ -20,7 +20,7 @@ export default {
     },
   },
   watch: {
-    $route(to, from) {
+    $route() {
       this.updateButtons();
     },
     pathList() {
@@ -48,10 +48,9 @@ export default {
     changePage(dir) {
       this.activeName = this.$route.path.split('/')[3];
       let index = this.pathList.indexOf(this.activeName);
-      let path;
       if (dir === -1 && this.pagePos === -1) return;
       if (dir === 1 && this.pagePos === 1) return;
-      path = this.pathList[index + dir];
+      const path = this.pathList[index + dir];
       this.activeName = path;
       if (path) {
         this.$router.push({

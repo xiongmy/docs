@@ -97,7 +97,7 @@ export default {
       this.$nextTick(() => {
         this.$refs.menu.updateOpened();
         this.$refs.menu.updateActiveName();
-        const slider = document.getElementById('slider');
+        // const slider = document.getElementById('slider');
         // setTimeout(() => {
         //   const item = this.$refs[this.activeName];
         //   slider.scrollTo(0, item[0].$el.offsetTop + 35);

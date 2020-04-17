@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-import 'github-markdown-css';
+// import 'github-markdown-css';
 import animate from 'animate.css';
 import '@/assets/font.scss';
 import '@/assets/common.scss';
