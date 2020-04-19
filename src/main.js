@@ -18,7 +18,7 @@ Vue.use(animate);
 
 Vue.config.productionTip = false;
 
-router.afterEach(() => {
+router.afterEach((to, from, next) => {
   // 切换页面重置滚动条
   window.scrollTo(0, 0);
   // 设置初始语言

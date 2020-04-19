@@ -30,7 +30,7 @@ export default {
   methods: {
     ...mapActions(['setSliderBottom']),
     setProgress() {
-      this.$router.beforeEach((next) => {
+      this.$router.beforeEach((to,from,next) => {
         this.$Loading.start();
         next();
       });
