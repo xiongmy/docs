@@ -40,7 +40,7 @@
     "markdown-it-task-checkbox": "^1.0.6",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
-    "vue-cli-plugin-i18n": "^0.6.0",
+    "vue-cli-plugin-i18n": "^2.3.2",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^15.7.0",
     "vue-markdown-loader": "^2.4.1",
